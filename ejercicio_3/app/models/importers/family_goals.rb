@@ -39,7 +39,7 @@ module Importers
         end
       end
 
-      # Importa los datos optenidos al modelo
+      # Importa los datos obtenidos al modelo
       def import_data
         @data.each do |row|
           name = row.first
@@ -64,7 +64,7 @@ module Importers
         end
       end
 
-      # optiene los datos por fila
+      # obtiene los datos por fila
       def info_hash(row_index)
         if @spreadsheet.row(row_index).nil? or @spreadsheet.row(row_index).compact.empty?
           return nil
